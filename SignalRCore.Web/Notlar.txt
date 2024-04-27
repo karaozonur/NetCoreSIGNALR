@@ -1,0 +1,22 @@
+﻿1- Hubs Adında Klasör Oluşturduk
+2- Nuged dan Microsoft.AspNetCore.Signal Yükle
+2-Hubs Class Oluşturuldu --- ExampleHub
+
+Porgram.css
+builder.Services.AddSignalR();
+app.MapHub<ExampleHub>("/exampleHub");
+
+1. yol
+https://cdnjs.com/libraries/microsoft-signalr
+
+2.yol
+nodejs ve npm kurulu olmalı
+https://www.npmjs.com/package/@microsoft/signalr
+projeye gel sağ tıkla open folderde sağ tıkla klasör yolunu terminalde aç ve
+npm init  -y 
+npm i @microsoft/signalr
+
+yüklenen node_modules de @microsoft altında signalr var signalr.min.js i al wwwroot içine taşı
+sonra layout içine
+    <script src="~/lib/signalr.min.js"></script> 
+    tanımla
